@@ -1,0 +1,1 @@
+![Alt text](src/main/resources/parking-lot-design.png "parking lot design")
