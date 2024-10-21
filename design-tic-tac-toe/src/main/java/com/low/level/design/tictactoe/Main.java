@@ -1,4 +1,4 @@
-package com.low.level.design;
+package com.low.level.design.tictactoe;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
