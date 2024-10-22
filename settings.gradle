@@ -1,3 +1,4 @@
 include 'design-tic-tac-toe'
 include 'design-parking-lot'
+include 'design-vending-machine'
 
