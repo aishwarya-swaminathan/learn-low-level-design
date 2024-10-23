@@ -8,7 +8,7 @@ public class Product {
     private String name;
     private Double price;
 
-    Product(String name, Double price) {
+    public Product(String name, Double price) {
         this.id = "SKU"+ new Random().nextInt(100000);
         this.name = name;
         this.price = price;

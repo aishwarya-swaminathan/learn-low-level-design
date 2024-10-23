@@ -7,7 +7,7 @@ public class Cash {
     private Map<Coin, Integer> coins;
     private Map<Rupee, Integer> rupees;
 
-    Cash(Map<Coin, Integer> coins, Map<Rupee, Integer> rupees) {
+    public Cash(Map<Coin, Integer> coins, Map<Rupee, Integer> rupees) {
         this.coins = coins;
         this.rupees = rupees;
     }
@@ -20,12 +20,20 @@ public class Cash {
         return rupees;
     }
 
+    public void setCoins(Map<Coin, Integer> coins) {
+        this.coins = coins;
+    }
+
+    public void setRupees(Map<Rupee, Integer> rupees) {
+        this.rupees = rupees;
+    }
+
     public Double getTotal() {
         Double amount = Double.valueOf(0.0);
 
         if(!coins.isEmpty()) {
             for(Coin coin : coins.keySet()) {
-                amount = coin.getValue() * coins.get(coin);
+                amount += coin.getValue() * coins.get(coin);
             }
         }
 
